@@ -37,21 +37,21 @@ To me it is interesting to go on the stage at Google I/O, draw a wireframe on a 
  
 Because we have a time limit of 4.5 months, I believe we can break down the project into two milestones. The first one is to get an image, and to detect a small number of components (image, text, button, card), and to display the full-screen preview of the final design. Then depending on the results of the first milestone and the remaining time, for the second milestone, we can either add all other material components, or add the code to export the output to flutter code, or add user login so they can sync their data between devices, or something in between. Regardless of that, the following is my time estimations (product roadmap) of this app.
 
-#### December 2019 :
+#### December 2019:
 - UI/UX Design: The app will roughly have 4 screens. I will try to use [Google Materiel Design](https://material.io/design/) as well as [ML Kit Showcase App with Material Design](https://github.com/firebase/mlkit-material-android) and [Patterns for machine learning-powered features](https://material.io/collections/machine-learning/).
 
-#### January 2020 :
+#### January 2020:
 - AI: This will be the biggest part of the app. I will use TensorFlow based solutions from Google. I can break down this step into two major parts:
  
    - Dataset Preparation: This should be the most challenging part of the whole project. I either have to find an existing dataset like [The Oxford-IIIT Pet Dataset](http://www.robots.ox.ac.uk/~vgg/data/pets/) and [Quick Draw website](https://quickdraw.withgoogle.com/data) or create my own dataset. If I want to create the dataset, I will start with 4 classes and almost 800 labeled images. This will take almost 3 weeks if I manage to label 40 images per day.
  
   - Train, Test, and Deploy: If possible I will use the available firebase [ML Kit's on-device object detection and tracking API](https://firebase.google.com/docs/ml-kit/object-detection). If not, use [the Google Cloud Platform's user interface (UI)](https://cloud.google.com/vision/automl/object-detection/docs/edge-quickstart) to interact with the Cloud AutoML API to train a custom model and export it as a AutoML Vision Edge model. Then I can use Firebase [AutoML Vision Edge](https://firebase.google.com/docs/ml-kit/train-image-labeler) to host this model, and load them at run time with the iOS and Android SDKs. I will also bundle the model with the apps, so it will be immediately available on install. For this step I will consider 3 days, but this step can be combined with other steps too.
 
-#### February 2020 :
+#### February 2020:
 
-- Bootcamp at Google: By this time I have the design, a mockup, and the model. 
+- Bootcamp at Google: By this time, I have the design, a mockup, and the model. 
 
-#### March & April 2020 :
+#### March & April 2020:
 
 - Mobile Apps: I will use flutter for this project to make iOS and Android Apps. This will take 4 weeks.
 
@@ -59,7 +59,7 @@ Because we have a time limit of 4.5 months, I believe we can break down the proj
 
 - As you can see these steps will roughly take 10.5 weeks. As I mentioned before, depending on the results, I will use the remaining time to further improve the app.
 
-#### May 2020 : 
+#### May 2020: 
 
 - Release: Mostly to prepare the store listing, including the app icons, the screenshots, the descriptions and the rest.
 
